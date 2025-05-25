@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sampoorna Bharat Kendra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f0ff;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #003b8b;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .hero {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #004aad;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .services, .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .service {
+      background-color: white;
+      border: 1px solid #cce0ff;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .service h3 {
+      margin-top: 0;
+      color: #004aad;
+    }
+    .images img {
+      max-width: 250px;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 40px auto;
+      max-width: 600px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form label {
+      margin-top: 10px;
+    }
+    form input, form select, form textarea, form button {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #004aad;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #002d6b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sampoorna Bharat Kendra</h1>
+    <p>CSC Services - Digital Empowerment for All</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#form">Apply</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h1>Empowering Citizens Through Digital Services</h1>
+    <p>CSC provides Aadhaar, PAN, Banking, Health, and more to rural India.</p>
+  </section>
+  <section id="services" class="services">
+    <div class="service"><h3>Aadhaar Services</h3><p>Enrollment, update, and printing</p></div>
+    <div class="service"><h3>PAN Card</h3><p>Application and corrections</p></div>
+    <div class="service"><h3>Banking</h3><p>Accounts, AEPS, withdrawals</p></div>
+    <div class="service"><h3>Certificates</h3><p>Birth, income, caste, etc.</p></div>
+    <div class="service"><h3>Bill Payments</h3><p>Electricity, mobile, DTH</p></div>
+    <div class="service"><h3>Health</h3><p>Ayushman Bharat, Telemedicine</p></div>
+    <div class="service"><h3>Education</h3><p>Exam forms, courses</p></div>
+    <div class="service"><h3>Ticket Booking</h3><p>Bus, rail, flights</p></div>
+  </section>
+  <section class="images">
+    <img src="https://csc.gov.in/images/csc-logo.png" alt="CSC Logo">
+    <img src="https://csc.gov.in/images/common_service_center.jpg" alt="CSC Center">
+    <img src="https://csc.gov.in/images/digital-india.jpg" alt="Digital India">
+  </section>
+  <form id="form" action="https://formspree.io/f/mnqeqlqz" method="POST">
+    <h2>Service Update Application</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" id="name" required>
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="contact">Phone Number:</label>
+    <input type="text" name="contact" id="contact" required>
+    <label for="service">Service to Update:</label>
+    <select name="service" id="service">
+      <option value="Aadhaar">Aadhaar</option>
+      <option value="PAN">PAN Card</option>
+      <option value="Banking">Banking Services</option>
+      <option value="DTH">Mobile/DTH Recharge</option>
+      <option value="Certificate">Government Certificate</option>
+      <option value="Other">Other</option>
+    </select>
+    <label for="details">Details of the Request:</label>
+    <textarea name="details" id="details" rows="4"></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+  <footer id="contact">
+    <p>Contact us: sampoornbharatkendra@gmail.com | +91-7901373507</p>
+    <p>4-5, Saradapuram Village, Kurupam Mandal, Parvathipuram Manyam, Andhra Pradesh - 535523</p>
+    <p>Languages Supported: Telugu | English | Hindi | Savara</p>
+    <p>&copy; 2025 Sampoorna Bharat Kendra</p>
+  </footer>
+</body>
+</html>
